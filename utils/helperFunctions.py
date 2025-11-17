@@ -15,7 +15,7 @@ def process_video(model_path, video_path, output_dir):
     # Setup video capture
     cap = cv2.VideoCapture(video_path)
     if not cap.isOpened():
-        raise Exception(f"❌ Could not open video file: {video_path}")
+        raise Exception(f" Could not open video file: {video_path}")
 
     # Get video properties
     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
@@ -35,7 +35,7 @@ def process_video(model_path, video_path, output_dir):
     label_annotator = sv.LabelAnnotator()
 
     frame_count = 0
-    print("⚡ Real-time helmet detection started! Press 'Q' to quit.\n")
+    print(" Real-time helmet detection started! Press 'Q' to quit.\n")
 
     while True:
         ret, frame = cap.read()
@@ -79,9 +79,9 @@ def process_video(model_path, video_path, output_dir):
     out.release()
     cv2.destroyAllWindows()
 
-    print(f"\n✅ Processing complete! Output saved at: {output_path}")
+    print(f"\n Processing complete! Output saved at: {output_path}")
 
-# 🧩 NEW FUNCTION — for single image detection
+#  NEW FUNCTION — for single image detection
 def process_image(model_path, image_path, output_dir):
     model = YOLO(model_path)
     os.makedirs(output_dir, exist_ok=True)
