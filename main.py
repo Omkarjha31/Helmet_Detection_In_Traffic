@@ -10,12 +10,11 @@ OUTPUT_DIR = "Helmet_Detection_Video_YOLOv8/runs\outputs"
 def main():
     print(" Helmet Detection started...\n")
 
-    # ==== CHOOSE MODE ====
     MODE = "video"   # change to "video" or "image"
 
     if MODE == "video":
-        print(f"🎥 Input Video: {VIDEO_PATH}")
-        print(f"💾 Output will be saved at: {OUTPUT_DIR}\n")
+        print(f"Input Video: {VIDEO_PATH}")
+        print(f"Output will be saved at: {OUTPUT_DIR}\n")
         process_video(MODEL_PATH, VIDEO_PATH, OUTPUT_DIR)
 
     elif MODE == "image":
@@ -24,7 +23,7 @@ def main():
         process_image(MODEL_PATH, IMAGE_PATH, OUTPUT_DIR)
 
     else:
-        print("❌ Invalid MODE! Please choose either 'video' or 'image'.")
+        print("Invalid MODE! Please choose either 'video' or 'image'.")
 
 if __name__ == "__main__":
     main()
