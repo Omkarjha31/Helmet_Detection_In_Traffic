@@ -47,5 +47,13 @@ Helmet_Detection_YOLOv8/
 
 ## Installation
 1. Clone this repository
-    git clone https://github.com/<your-username>/Helmet_Detection_YOLOv8.git
+    git clone https://github.com/<your-username>/Helmet_Detection_YOLOv8.git<br>
     cd Helmet_Detection_YOLOv8
+2. Create & activate a virtual environment
+    python -m venv venv<br>
+    venv\Scripts\activate   # On Windows
+3. Install dependencies
+    pip install -r requirements.txt<br>
+
+
+
