@@ -21,39 +21,39 @@ The goal is to improve road-safety monitoring and workplace compliance by provid
 ---
 
 ## Project Structure
-Helmet_Detection_YOLOv8/
-│
-├── main.py                           # Entry point for running detection
-│
-├── utils/
-│   ├── __init__.py
-│   └── helperFunctions.py            # Functions for image and video detection
-│
-├── models/
-│   └── best.pt                       # Custom-trained YOLOv8 model
-│
-├── input/
-│   ├── test_image.jpg
-│   └── test_video.mp4
-│
-├── runs/
-│   └── outputs/                      # Annotated results (images/videos)
-│
-├── requirements.txt
-│
-└── README.md
+Helmet_Detection_YOLOv8/<br>
+│<br>
+├── main.py                           # Entry point for running detection<br>
+│<br>
+├── utils/<br>
+│   ├── __init__.py<br>
+│   └── helperFunctions.py            # Functions for image and video detection<br>
+│<br>
+├── models/<br>
+│   └── best.pt                       # Custom-trained YOLOv8 model<br>
+│<br>
+├── input/<br>
+│   ├── test_image.jpg<br>
+│   └── test_video.mp4<br>
+│<br>
+├── runs/<br>
+│   └── outputs/                      # Annotated results (images/videos)<br>
+│<br>
+├── requirements.txt<br>
+│<br>
+└── README.md<br>
 
 ---
 
 ## Installation
-1. Clone this repository
+1. Clone this repository<br>
     git clone https://github.com/<your-username>/Helmet_Detection_YOLOv8.git<br>
     cd Helmet_Detection_YOLOv8
-2. Create & activate a virtual environment
+2. Create & activate a virtual environment<br>
     python -m venv venv<br>
     venv\Scripts\activate   # On Windows
-3. Install dependencies
-    pip install -r requirements.txt<br>
+3. Install dependencies<br>
+    pip install -r requirements.txt
 
 
 
